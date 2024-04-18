@@ -1,0 +1,141 @@
+img {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+button {
+  font-family: 'Nunito', sans-serif;
+  min-width: 44px; 
+  min-height: 44px; 
+  padding: 8px; 
+}
+
+.container {
+  padding-inline: 16px;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* Header */
+header {
+  position: relative;
+  background-color: #8D7B68;
+  box-shadow: 0 2px 8px 2px #00000055;
+  z-index: 9999;
+}
+
+.nav-content {
+  padding-block: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 12px;
+}
+
+.nav-content .brand-name h1 {
+  margin: 0; /* Menghapus margin dari h1 */
+  font-size: 1.5em;
+  font-weight: 700;
+  color: white;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px; /* Sesuaikan padding untuk mencapai dimensi touch target yang diinginkan */
+}
+
+header .drawer-button {
+  display: none;
+  padding: 8px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 28px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav-content .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-content .nav-list a {
+  padding: 8px 16px;
+  font-size: 1em;
+  text-decoration: none;
+  color: white;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-content .nav-list a:hover {
+  text-decoration: underline;
+}
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+ 
+.skip-link:focus {
+   top: 0;
+}
+
+.jumbotron {
+  background-color: #33333355;
+  background-image: url('/src/public/images/heros/hero-image_4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron .container {
+  display: flex;
+  min-height: 850px;
+}
+
+.jumbotron .inner-jumbotron {
+  margin: auto;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.jumbotron .inner-jumbotron h1{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title{
+  text-align: center;
+}
+
+
+
